@@ -1,5 +1,9 @@
 def pin_extractor(poem):
     secret_code = ""
+    lines = poem.split('\n')
+
+    for line in lines:
+        print(line) 
 
 
 poem = """ 

@@ -1,4 +1,5 @@
 def pin_extractor(poems):
+    secret_codes = []    
     
     for poem in poems:
         secret_code = ""
@@ -12,10 +13,12 @@ def pin_extractor(poems):
             else:
                 secret_code += "0"
         
-        return secret_code
+        secret_codes.append(secret_code)
+    return secret_codes
+
 
 poem = "Stars and the moon\nshine in the sky\nwhite and bright\nuntil the end of the night"
 poem2 = "The grass is green\nhere and there\nhoping for rain\nbefore it turns yellow"
 poem3 = "There\nonce\nwas\na\ndragon"
 
-# print(pin_extractor(poem))
+print(pin_extractor([poem, poem2, poem3]))

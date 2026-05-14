@@ -7,9 +7,13 @@ def pin_extractor(poem):
         
         if len(words) > line_index:
             secret_code += str(len(words[line_index]))
+        else:
+            secret_code += "0"
     
     return secret_code
 
 poem = "Stars and the moon\nshine in the sky\nwhite and bright\nuntil the end of the night"
+poem2 = "The grass is green\nhere and there\nhoping for rain\nbefore it turns yellow"
+poem3 = "There\nonce\nwas\na\ndragon"
 
-print(pin_extractor(poem))
+# print(pin_extractor(poem))
